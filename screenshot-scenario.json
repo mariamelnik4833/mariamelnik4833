@@ -1,0 +1,72 @@
+{
+  "notes": "tapFrac is a normalised SCREEN point measured from the top left. Every UI tap is computed from the real RectTransform over the 1242x2688 canvas reference with the letterbox correction applied: the CanvasScaler expands to 1242x2760 on the 1080x2400 device and the aspect fitter centres a 1242x2688 panel inside it, so a panel point y from the top lands at (36 + y) / 2760 of the screen. The two gameplay taps are WORLD points on the diverter hub and need no correction - the camera fills the screen - so they are (worldX / halfWidth + 1) / 2 and (1 - worldY / halfHeight) / 2 with halfHeight 5 and halfWidth 2.3077. Step 3 is aimed at a point that lies inside the teaching sheet's HALLS footer AND inside the menu's own HALLS button, so the hall board is reached whether or not the sheet opened. The upper diverter is thrown in step 5 and thrown BACK in step 6, which is both the clearest demonstration of the mechanic and what keeps the trip alive: ported to a simulator over 480 hall-and-attempt pairs, these two presses cost at most 3 of the 5 attempts and the trip still ends no earlier than 98.9 s, while the last frame here lands about 23.5 s after the first gameplay frame. The pause card also releases itself after 7 s, so a missed RESUME cannot park the capture.",
+  "steps": [
+    {
+      "wait": 3,
+      "shot": "01_MenuScreen"
+    },
+    {
+      "tapFrac": [
+        0.7254,
+        0.8068
+      ],
+      "label": "HOW_TO_PLAY",
+      "wait": 1.6,
+      "shot": "02_HowToPlay"
+    },
+    {
+      "tapFrac": [
+        0.35,
+        0.8007
+      ],
+      "label": "HALLS",
+      "wait": 1.6,
+      "shot": "03_HallBoard"
+    },
+    {
+      "tapFrac": [
+        0.2665,
+        0.3188
+      ],
+      "label": "HALL_1_TILE",
+      "waitLoader": true,
+      "shot": "04_GameScreen"
+    },
+    {
+      "tapFrac": [
+        0.5,
+        0.38
+      ],
+      "label": "UPPER_GATE",
+      "wait": 5,
+      "shot": "05_GameRouting"
+    },
+    {
+      "tapFrac": [
+        0.435,
+        0.415
+      ],
+      "label": "UPPER_GATE_BACK",
+      "wait": 5,
+      "shot": "06_GameDelivery"
+    },
+    {
+      "tapFrac": [
+        0.9026,
+        0.0594
+      ],
+      "label": "PAUSE",
+      "wait": 2.5,
+      "shot": "07_PausePop"
+    },
+    {
+      "tapFrac": [
+        0.3068,
+        0.6884
+      ],
+      "label": "RESUME",
+      "wait": 6,
+      "shot": "08_GameResumed"
+    }
+  ]
+}

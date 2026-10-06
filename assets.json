@@ -1,0 +1,253 @@
+{
+  "style": "bold flat vector cartoon, thick dark outline, chunky casual mobile game art, high saturation, flat two-tone shading",
+  "palette": [
+    "#173020",
+    "#1E3D29",
+    "#7CCB5B",
+    "#F5C451",
+    "#EE6B55",
+    "#8D67C7",
+    "#FFF6E5"
+  ],
+  "notes": "One art style for the whole project, written word for word at the head of every prompt. Every sprite that takes part in the mechanic declares its orientation in words: the diverter arm and the back chevron are asymmetric and are named facing right and facing left, so the code can mirror them deliberately; everything else is symmetric and is never mirrored. The six nine-sliced sprites (doorway, shutter, glass tube, guide rail, nameplate, plate) ask for flat stretchable edges, because their import settings give them a real border. No prompt argues about the background colour - the pipeline cuts it away. There is no audio asset of any kind. No prompt contains the application name and no sprite carries lettering: the splash and menu mark is an abstract crown over a fruit crate. The icon hero is one object, a crowned apple.",
+  "assets": [
+    {
+      "name": "bg_main",
+      "type": "bg",
+      "transparent": false,
+      "target": "Assets/Art/Textures/_BASE/Backgrounds/BG_main.png",
+      "prompt": "bold flat vector cartoon, thick dark outline, chunky casual mobile game art, high saturation, flat two-tone shading, a grand royal harvest hall seen head on, deep green stone walls with heavy gold arches, crates of harvest stacked in the far corners, bright and contrasty, the centre of the frame calm and uncluttered so controls read over it, the upper strip darkened, vertical 9:19.5 portrait composition, palette deep green #173020, lime #7CCB5B, gold #F5C451, coral #EE6B55, grape #8D67C7, cream #FFF6E5, no text, no letters, no logos, no watermark, no UI elements, not a photo, not photorealistic, no DSLR, no film grain, no lens flare, no bokeh, no depth of field"
+    },
+    {
+      "name": "bg_game",
+      "type": "bg",
+      "transparent": false,
+      "target": "Assets/Art/Textures/_BASE/Backgrounds/BG_game.png",
+      "prompt": "bold flat vector cartoon, thick dark outline, chunky casual mobile game art, high saturation, flat two-tone shading, the delivery shaft beneath that same hall, deep green stone walls with dim gold trim, a soft vignette, the whole middle band deliberately empty, dark and low contrast so the gameplay reads on top of it, the top and bottom strips darkened for readouts, vertical 9:19.5 portrait composition, palette deep green #173020, lime #7CCB5B, gold #F5C451, coral #EE6B55, grape #8D67C7, cream #FFF6E5, no text, no letters, no logos, no watermark, no UI elements, not a photo, not photorealistic, no DSLR, no film grain, no lens flare, no bokeh, no depth of field"
+    },
+    {
+      "name": "sprite_crown_mark",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_crown_mark.png",
+      "prompt": "bold flat vector cartoon, thick dark outline, chunky casual mobile game art, high saturation, flat two-tone shading, an abstract heraldic emblem, a gold crown sitting above a stylised fruit crate, a single flat mark with a thick dark contour, one subject centred and completely inside the frame, crisp silhouette, no other objects, minimal ground shadow, no floor, palette deep green #173020, lime #7CCB5B, gold #F5C451, coral #EE6B55, grape #8D67C7, cream #FFF6E5, no text, no letters, no logos, no watermark, no UI elements, not a photo, not photorealistic, no DSLR, no film grain, no lens flare, no bokeh, no depth of field",
+      "orientation": "front view, symmetric left to right, mirroring does not matter"
+    },
+    {
+      "name": "sprite_hero_crown_apple",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_hero_crown_apple.png",
+      "prompt": "bold flat vector cartoon, thick dark outline, chunky casual mobile game art, high saturation, flat two-tone shading, ONE single glossy red apple wearing a small gold crown, seen three quarters on, one subject centred and completely inside the frame, crisp silhouette, no other objects, minimal ground shadow, no floor, palette deep green #173020, lime #7CCB5B, gold #F5C451, coral #EE6B55, grape #8D67C7, cream #FFF6E5, no text, no letters, no logos, no watermark, no UI elements, not a photo, not photorealistic, no DSLR, no film grain, no lens flare, no bokeh, no depth of field",
+      "orientation": "front view, symmetric, upright, never mirrored"
+    },
+    {
+      "name": "sprite_fruit_apple",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_fruit_apple.png",
+      "prompt": "bold flat vector cartoon, thick dark outline, chunky casual mobile game art, high saturation, flat two-tone shading, ONE single glossy red apple with one green leaf, one subject centred and completely inside the frame, crisp silhouette, no other objects, minimal ground shadow, no floor, palette deep green #173020, lime #7CCB5B, gold #F5C451, coral #EE6B55, grape #8D67C7, cream #FFF6E5, no text, no letters, no logos, no watermark, no UI elements, not a photo, not photorealistic, no DSLR, no film grain, no lens flare, no bokeh, no depth of field",
+      "orientation": "front view, symmetric, upright, never mirrored"
+    },
+    {
+      "name": "sprite_fruit_lemon",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_fruit_lemon.png",
+      "prompt": "bold flat vector cartoon, thick dark outline, chunky casual mobile game art, high saturation, flat two-tone shading, ONE single glossy yellow lemon, one subject centred and completely inside the frame, crisp silhouette, no other objects, minimal ground shadow, no floor, palette deep green #173020, lime #7CCB5B, gold #F5C451, coral #EE6B55, grape #8D67C7, cream #FFF6E5, no text, no letters, no logos, no watermark, no UI elements, not a photo, not photorealistic, no DSLR, no film grain, no lens flare, no bokeh, no depth of field",
+      "orientation": "front view, symmetric, upright, never mirrored"
+    },
+    {
+      "name": "sprite_fruit_plum",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_fruit_plum.png",
+      "prompt": "bold flat vector cartoon, thick dark outline, chunky casual mobile game art, high saturation, flat two-tone shading, ONE single glossy purple plum, one subject centred and completely inside the frame, crisp silhouette, no other objects, minimal ground shadow, no floor, palette deep green #173020, lime #7CCB5B, gold #F5C451, coral #EE6B55, grape #8D67C7, cream #FFF6E5, no text, no letters, no logos, no watermark, no UI elements, not a photo, not photorealistic, no DSLR, no film grain, no lens flare, no bokeh, no depth of field",
+      "orientation": "front view, symmetric, upright, never mirrored"
+    },
+    {
+      "name": "sprite_fruit_berry",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_fruit_berry.png",
+      "prompt": "bold flat vector cartoon, thick dark outline, chunky casual mobile game art, high saturation, flat two-tone shading, ONE single cluster of three blue berries, one subject centred and completely inside the frame, crisp silhouette, no other objects, minimal ground shadow, no floor, palette deep green #173020, lime #7CCB5B, gold #F5C451, coral #EE6B55, grape #8D67C7, cream #FFF6E5, no text, no letters, no logos, no watermark, no UI elements, not a photo, not photorealistic, no DSLR, no film grain, no lens flare, no bokeh, no depth of field",
+      "orientation": "front view, symmetric, upright, never mirrored"
+    },
+    {
+      "name": "sprite_gate_arm",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_gate_arm.png",
+      "prompt": "bold flat vector cartoon, thick dark outline, chunky casual mobile game art, high saturation, flat two-tone shading, ONE single diverter arm, a thick rounded green bar with a gold cap on one end, lying horizontally, side view with the capped end pointing RIGHT, one subject centred and completely inside the frame, crisp silhouette, no other objects, minimal ground shadow, no floor, palette deep green #173020, lime #7CCB5B, gold #F5C451, coral #EE6B55, grape #8D67C7, cream #FFF6E5, no text, no letters, no logos, no watermark, no UI elements, not a photo, not photorealistic, no DSLR, no film grain, no lens flare, no bokeh, no depth of field",
+      "orientation": "side view, facing RIGHT, asymmetric, mirrored by the code for the other side"
+    },
+    {
+      "name": "sprite_gate_hub",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_gate_hub.png",
+      "prompt": "bold flat vector cartoon, thick dark outline, chunky casual mobile game art, high saturation, flat two-tone shading, ONE single round gold pivot cap with a dark green centre, seen face on, one subject centred and completely inside the frame, crisp silhouette, no other objects, minimal ground shadow, no floor, palette deep green #173020, lime #7CCB5B, gold #F5C451, coral #EE6B55, grape #8D67C7, cream #FFF6E5, no text, no letters, no logos, no watermark, no UI elements, not a photo, not photorealistic, no DSLR, no film grain, no lens flare, no bokeh, no depth of field",
+      "orientation": "front view, symmetric, mirroring does not matter"
+    },
+    {
+      "name": "sprite_room_shell",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_room_shell.png",
+      "prompt": "bold flat vector cartoon, thick dark outline, chunky casual mobile game art, high saturation, flat two-tone shading, ONE single rectangular doorway frame of deep green stone with gold trim, seen head on, flat straight left and right edges so it can be stretched, one subject centred and completely inside the frame, crisp silhouette, no other objects, minimal ground shadow, no floor, palette deep green #173020, lime #7CCB5B, gold #F5C451, coral #EE6B55, grape #8D67C7, cream #FFF6E5, no text, no letters, no logos, no watermark, no UI elements, not a photo, not photorealistic, no DSLR, no film grain, no lens flare, no bokeh, no depth of field",
+      "orientation": "front view, symmetric, nine-sliced"
+    },
+    {
+      "name": "sprite_room_door",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_room_door.png",
+      "prompt": "bold flat vector cartoon, thick dark outline, chunky casual mobile game art, high saturation, flat two-tone shading, ONE single horizontal shutter plate, gold with green studs, flat straight left and right edges so it can be stretched, one subject centred and completely inside the frame, crisp silhouette, no other objects, minimal ground shadow, no floor, palette deep green #173020, lime #7CCB5B, gold #F5C451, coral #EE6B55, grape #8D67C7, cream #FFF6E5, no text, no letters, no logos, no watermark, no UI elements, not a photo, not photorealistic, no DSLR, no film grain, no lens flare, no bokeh, no depth of field",
+      "orientation": "front view, symmetric, nine-sliced"
+    },
+    {
+      "name": "sprite_banner_ribbon",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_banner_ribbon.png",
+      "prompt": "bold flat vector cartoon, thick dark outline, chunky casual mobile game art, high saturation, flat two-tone shading, ONE single horizontal nameplate ribbon, gold with dark green edges, flat straight left and right edges so it can be stretched, one subject centred and completely inside the frame, crisp silhouette, no other objects, minimal ground shadow, no floor, palette deep green #173020, lime #7CCB5B, gold #F5C451, coral #EE6B55, grape #8D67C7, cream #FFF6E5, no text, no letters, no logos, no watermark, no UI elements, not a photo, not photorealistic, no DSLR, no film grain, no lens flare, no bokeh, no depth of field",
+      "orientation": "front view, symmetric, nine-sliced"
+    },
+    {
+      "name": "sprite_column_glass",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_column_glass.png",
+      "prompt": "bold flat vector cartoon, thick dark outline, chunky casual mobile game art, high saturation, flat two-tone shading, ONE single tall translucent glass tube segment with a pale highlight down one side, flat straight top and bottom edges so it can be stretched, one subject centred and completely inside the frame, crisp silhouette, no other objects, minimal ground shadow, no floor, palette deep green #173020, lime #7CCB5B, gold #F5C451, coral #EE6B55, grape #8D67C7, cream #FFF6E5, no text, no letters, no logos, no watermark, no UI elements, not a photo, not photorealistic, no DSLR, no film grain, no lens flare, no bokeh, no depth of field",
+      "orientation": "front view, symmetric, nine-sliced"
+    },
+    {
+      "name": "sprite_column_base",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_column_base.png",
+      "prompt": "bold flat vector cartoon, thick dark outline, chunky casual mobile game art, high saturation, flat two-tone shading, ONE single wide gold drain basin seen head on, one subject centred and completely inside the frame, crisp silhouette, no other objects, minimal ground shadow, no floor, palette deep green #173020, lime #7CCB5B, gold #F5C451, coral #EE6B55, grape #8D67C7, cream #FFF6E5, no text, no letters, no logos, no watermark, no UI elements, not a photo, not photorealistic, no DSLR, no film grain, no lens flare, no bokeh, no depth of field",
+      "orientation": "front view, symmetric, mirroring does not matter"
+    },
+    {
+      "name": "sprite_chute_fill",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_chute_fill.png",
+      "prompt": "bold flat vector cartoon, thick dark outline, chunky casual mobile game art, high saturation, flat two-tone shading, ONE single flat rounded vertical slab of glossy mashed fruit, uniform along its whole length so it can be stretched, no fruit shapes on it, one subject centred and completely inside the frame, crisp silhouette, no other objects, minimal ground shadow, no floor, palette deep green #173020, lime #7CCB5B, gold #F5C451, coral #EE6B55, grape #8D67C7, cream #FFF6E5, no text, no letters, no logos, no watermark, no UI elements, not a photo, not photorealistic, no DSLR, no film grain, no lens flare, no bokeh, no depth of field",
+      "orientation": "front view, symmetric, stretched vertically by the code"
+    },
+    {
+      "name": "sprite_shaft_rail",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_shaft_rail.png",
+      "prompt": "bold flat vector cartoon, thick dark outline, chunky casual mobile game art, high saturation, flat two-tone shading, ONE single vertical guide rail segment of green metal with gold rivets, uniform along its length, flat straight top and bottom edges so it can be stretched, one subject centred and completely inside the frame, crisp silhouette, no other objects, minimal ground shadow, no floor, palette deep green #173020, lime #7CCB5B, gold #F5C451, coral #EE6B55, grape #8D67C7, cream #FFF6E5, no text, no letters, no logos, no watermark, no UI elements, not a photo, not photorealistic, no DSLR, no film grain, no lens flare, no bokeh, no depth of field",
+      "orientation": "front view, symmetric, nine-sliced"
+    },
+    {
+      "name": "sprite_arch_top",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_arch_top.png",
+      "prompt": "bold flat vector cartoon, thick dark outline, chunky casual mobile game art, high saturation, flat two-tone shading, ONE single ornate gold archway mouth seen from the front, the opening facing DOWN, one subject centred and completely inside the frame, crisp silhouette, no other objects, minimal ground shadow, no floor, palette deep green #173020, lime #7CCB5B, gold #F5C451, coral #EE6B55, grape #8D67C7, cream #FFF6E5, no text, no letters, no logos, no watermark, no UI elements, not a photo, not photorealistic, no DSLR, no film grain, no lens flare, no bokeh, no depth of field",
+      "orientation": "front view, symmetric, opening faces DOWN"
+    },
+    {
+      "name": "sprite_plate",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_plate.png",
+      "prompt": "bold flat vector cartoon, thick dark outline, chunky casual mobile game art, high saturation, flat two-tone shading, ONE single plain rounded rectangle panel in flat deep green with a thin gold rim, empty in the middle, even rounded corners on all four sides so it can be stretched, one subject centred and completely inside the frame, crisp silhouette, no other objects, minimal ground shadow, no floor, palette deep green #173020, lime #7CCB5B, gold #F5C451, coral #EE6B55, grape #8D67C7, cream #FFF6E5, no text, no letters, no logos, no watermark, no UI elements, not a photo, not photorealistic, no DSLR, no film grain, no lens flare, no bokeh, no depth of field",
+      "orientation": "front view, symmetric, nine-sliced"
+    },
+    {
+      "name": "sprite_icon_back",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_icon_back.png",
+      "prompt": "bold flat vector cartoon, thick dark outline, chunky casual mobile game art, high saturation, flat two-tone shading, ONE single thick chevron arrow glyph in cream, pointing LEFT, one subject centred and completely inside the frame, crisp silhouette, no other objects, minimal ground shadow, no floor, palette deep green #173020, lime #7CCB5B, gold #F5C451, coral #EE6B55, grape #8D67C7, cream #FFF6E5, no text, no letters, no logos, no watermark, no UI elements, not a photo, not photorealistic, no DSLR, no film grain, no lens flare, no bokeh, no depth of field",
+      "orientation": "facing LEFT, asymmetric, never mirrored"
+    },
+    {
+      "name": "sprite_icon_pause",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_icon_pause.png",
+      "prompt": "bold flat vector cartoon, thick dark outline, chunky casual mobile game art, high saturation, flat two-tone shading, ONE single pause glyph, two thick vertical cream bars side by side, one subject centred and completely inside the frame, crisp silhouette, no other objects, minimal ground shadow, no floor, palette deep green #173020, lime #7CCB5B, gold #F5C451, coral #EE6B55, grape #8D67C7, cream #FFF6E5, no text, no letters, no logos, no watermark, no UI elements, not a photo, not photorealistic, no DSLR, no film grain, no lens flare, no bokeh, no depth of field",
+      "orientation": "front view, symmetric, mirroring does not matter"
+    },
+    {
+      "name": "sprite_icon_close",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_icon_close.png",
+      "prompt": "bold flat vector cartoon, thick dark outline, chunky casual mobile game art, high saturation, flat two-tone shading, ONE single close cross glyph, two thick cream bars crossing, one subject centred and completely inside the frame, crisp silhouette, no other objects, minimal ground shadow, no floor, palette deep green #173020, lime #7CCB5B, gold #F5C451, coral #EE6B55, grape #8D67C7, cream #FFF6E5, no text, no letters, no logos, no watermark, no UI elements, not a photo, not photorealistic, no DSLR, no film grain, no lens flare, no bokeh, no depth of field",
+      "orientation": "front view, symmetric, mirroring does not matter"
+    },
+    {
+      "name": "sprite_pip_full",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_pip_full.png",
+      "prompt": "bold flat vector cartoon, thick dark outline, chunky casual mobile game art, high saturation, flat two-tone shading, ONE single filled round pip, bright lime with a thick dark outline, one subject centred and completely inside the frame, crisp silhouette, no other objects, minimal ground shadow, no floor, palette deep green #173020, lime #7CCB5B, gold #F5C451, coral #EE6B55, grape #8D67C7, cream #FFF6E5, no text, no letters, no logos, no watermark, no UI elements, not a photo, not photorealistic, no DSLR, no film grain, no lens flare, no bokeh, no depth of field",
+      "orientation": "front view, symmetric, mirroring does not matter"
+    },
+    {
+      "name": "sprite_pip_empty",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_pip_empty.png",
+      "prompt": "bold flat vector cartoon, thick dark outline, chunky casual mobile game art, high saturation, flat two-tone shading, ONE single hollow round pip, a dark green ring with nothing inside it, one subject centred and completely inside the frame, crisp silhouette, no other objects, minimal ground shadow, no floor, palette deep green #173020, lime #7CCB5B, gold #F5C451, coral #EE6B55, grape #8D67C7, cream #FFF6E5, no text, no letters, no logos, no watermark, no UI elements, not a photo, not photorealistic, no DSLR, no film grain, no lens flare, no bokeh, no depth of field",
+      "orientation": "front view, symmetric, mirroring does not matter"
+    },
+    {
+      "name": "sprite_star",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_star.png",
+      "prompt": "bold flat vector cartoon, thick dark outline, chunky casual mobile game art, high saturation, flat two-tone shading, ONE single five pointed star in gold with a thick dark outline, one subject centred and completely inside the frame, crisp silhouette, no other objects, minimal ground shadow, no floor, palette deep green #173020, lime #7CCB5B, gold #F5C451, coral #EE6B55, grape #8D67C7, cream #FFF6E5, no text, no letters, no logos, no watermark, no UI elements, not a photo, not photorealistic, no DSLR, no film grain, no lens flare, no bokeh, no depth of field",
+      "orientation": "front view, symmetric, mirroring does not matter"
+    },
+    {
+      "name": "sprite_lock",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_lock.png",
+      "prompt": "bold flat vector cartoon, thick dark outline, chunky casual mobile game art, high saturation, flat two-tone shading, ONE single closed padlock, gold body with a green shackle, one subject centred and completely inside the frame, crisp silhouette, no other objects, minimal ground shadow, no floor, palette deep green #173020, lime #7CCB5B, gold #F5C451, coral #EE6B55, grape #8D67C7, cream #FFF6E5, no text, no letters, no logos, no watermark, no UI elements, not a photo, not photorealistic, no DSLR, no film grain, no lens flare, no bokeh, no depth of field",
+      "orientation": "front view, symmetric, mirroring does not matter"
+    },
+    {
+      "name": "sprite_burst",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_burst.png",
+      "prompt": "bold flat vector cartoon, thick dark outline, chunky casual mobile game art, high saturation, flat two-tone shading, ONE single starburst flash of lime and gold rays radiating from the centre, one subject centred and completely inside the frame, crisp silhouette, no other objects, minimal ground shadow, no floor, palette deep green #173020, lime #7CCB5B, gold #F5C451, coral #EE6B55, grape #8D67C7, cream #FFF6E5, no text, no letters, no logos, no watermark, no UI elements, not a photo, not photorealistic, no DSLR, no film grain, no lens flare, no bokeh, no depth of field",
+      "orientation": "front view, symmetric, mirroring does not matter"
+    },
+    {
+      "name": "sprite_tut_fall",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_tut_fall.png",
+      "prompt": "bold flat vector cartoon, thick dark outline, chunky casual mobile game art, high saturation, flat two-tone shading, ONE single simple diagram, an apple falling down a narrow vertical shaft with two short motion streaks behind it, one subject centred and completely inside the frame, crisp silhouette, no other objects, minimal ground shadow, no floor, palette deep green #173020, lime #7CCB5B, gold #F5C451, coral #EE6B55, grape #8D67C7, cream #FFF6E5, no text, no letters, no logos, no watermark, no UI elements, not a photo, not photorealistic, no DSLR, no film grain, no lens flare, no bokeh, no depth of field",
+      "orientation": "front view, symmetric, mirroring does not matter"
+    },
+    {
+      "name": "sprite_tut_gate",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_tut_gate.png",
+      "prompt": "bold flat vector cartoon, thick dark outline, chunky casual mobile game art, high saturation, flat two-tone shading, ONE single simple diagram, a pointing finger pressing a diverter arm that swings, the arm pointing RIGHT, one subject centred and completely inside the frame, crisp silhouette, no other objects, minimal ground shadow, no floor, palette deep green #173020, lime #7CCB5B, gold #F5C451, coral #EE6B55, grape #8D67C7, cream #FFF6E5, no text, no letters, no logos, no watermark, no UI elements, not a photo, not photorealistic, no DSLR, no film grain, no lens flare, no bokeh, no depth of field",
+      "orientation": "side view, arm faces RIGHT, asymmetric, never mirrored"
+    },
+    {
+      "name": "sprite_tut_room",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_tut_room.png",
+      "prompt": "bold flat vector cartoon, thick dark outline, chunky casual mobile game art, high saturation, flat two-tone shading, ONE single simple diagram, three small doorways side by side each holding a different piece of fruit, one subject centred and completely inside the frame, crisp silhouette, no other objects, minimal ground shadow, no floor, palette deep green #173020, lime #7CCB5B, gold #F5C451, coral #EE6B55, grape #8D67C7, cream #FFF6E5, no text, no letters, no logos, no watermark, no UI elements, not a photo, not photorealistic, no DSLR, no film grain, no lens flare, no bokeh, no depth of field",
+      "orientation": "front view, symmetric, mirroring does not matter"
+    }
+  ]
+}
